@@ -1,0 +1,81 @@
+// Variables
+$heading-font: "Raleway", "Helvetica", "Arial", "sans-serif"
+$body-font: "Open Sans", "Helvetica", "Arial", "sans-serif"
+$monospace-font: "Inconsolata", "Helvetica", "Arial", "sans-serif"
+
+$white: #f2f2f2
+$black: #202020
+$grey: #eeeeee
+$red: #ec0b0b
+
+$content-width: calc(37.5rem + 120px)
+
+*
+	margin: 0
+	padding: 0
+	border: 0
+	outline: 0
+	font-size: 100%
+	vertical-align: baseline
+	background: transparent
+
+body
+	background-color: $white
+	color: $black
+	font-size: 1.25em
+
+div
+	box-sizing: border-box
+
+h1, h2, h3
+	font-family: $heading-font
+
+h1
+	font-size: 2.618em
+
+h2
+	font-size: 1.618em
+
+h3
+	font-size: 1.25em
+
+p
+	font-size: 1em
+	font-family: $body-font
+	line-height: 1.5
+
+header
+	border-bottom: 1px solid $black
+	padding-bottom: 6px
+
+footer
+	border-top: 1px solid $black
+	padding-top: 14px
+	margin-top: 16px
+	text-align: center
+
+	p
+		line-height: 1
+
+.container
+	max-width: $content-width
+
+.light-text
+	font-weight: 300
+
+.card
+	padding: 5px 24px 14px 24px
+	margin-top: 16px
+	background-color: $grey
+
+	h2
+		font-family: $monospace-font
+
+	p
+		text-align: justify
+
+#language-controls
+	position: absolute
+	top: 0px
+	right: 0px
+	padding: 8px 16px

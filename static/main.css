@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+body {
+  background-color: #f2f2f2;
+  color: #202020;
+  font-size: 1.25em; }
+
+div {
+  box-sizing: border-box; }
+
+h1, h2, h3 {
+  font-family: "Raleway", "Helvetica", "Arial", "sans-serif"; }
+
+h1 {
+  font-size: 2.618em; }
+
+h2 {
+  font-size: 1.618em; }
+
+h3 {
+  font-size: 1.25em; }
+
+p {
+  font-size: 1em;
+  font-family: "Open Sans", "Helvetica", "Arial", "sans-serif";
+  line-height: 1.5; }
+
+header {
+  border-bottom: 1px solid #202020;
+  padding-bottom: 6px; }
+
+footer {
+  border-top: 1px solid #202020;
+  padding-top: 14px;
+  margin-top: 16px;
+  text-align: center; }
+  footer p {
+    line-height: 1; }
+
+.container {
+  max-width: calc(37.5rem + 120px); }
+
+.light-text {
+  font-weight: 300; }
+
+.card {
+  padding: 5px 24px 14px 24px;
+  margin-top: 16px;
+  background-color: #eeeeee; }
+  .card h2 {
+    font-family: "Inconsolata", "Helvetica", "Arial", "sans-serif"; }
+  .card p {
+    text-align: justify; }
+
+#language-controls {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  padding: 8px 16px; }
+
+/*# sourceMappingURL=main.css.map */
