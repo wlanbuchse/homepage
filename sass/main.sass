@@ -5,7 +5,7 @@ $monospace-font: "Inconsolata", "Helvetica", "Arial", "sans-serif"
 
 $white: #f2f2f2
 $black: #202020
-$grey: #eeeeee
+$grey: #f0f0f0
 $red: #ec0b0b
 
 $content-width: calc(37.5rem + 120px)
@@ -31,7 +31,7 @@ h1, h2, h3
 	font-family: $heading-font
 
 h1
-	font-size: 2.333em
+	font-size: 1.918em
 
 h2
 	font-size: 1.618em
@@ -55,7 +55,8 @@ footer
 	text-align: center
 
 	p
-		line-height: 1
+		line-height: 0.7
+		font-size: 0.85em
 
 .container
 	max-width: $content-width
@@ -66,7 +67,7 @@ footer
 .card
 	padding: 5px 24px 14px 24px
 	margin-top: 28px
-	background-color: $grey
+	border: 1px solid $black
 
 	&:hover h2 .cursor
 		display: inline
@@ -76,6 +77,16 @@ footer
 
 	p
 		text-align: justify
+
+.project
+	border-bottom: 1px solid $white
+	padding-bottom: 12px
+	margin-bottom: 6px
+
+	&:last-of-type
+		border-bottom: none
+		padding-bottom: 0px
+		margin-bottom: 0px
 
 .cursor
 	display: none
@@ -94,12 +105,14 @@ footer
 	top: 0px
 	right: 0px
 	padding: 8px 16px
+	font-size: 0.75em
 
 #contact-icons
 	margin-bottom: 12px
 
 	a i
 		-webkit-transition: transform 0.33s
+		transition: transform 0.33s
 		color: $black
 
 		&:last-of-type
@@ -107,6 +120,7 @@ footer
 
 		&:hover
 			-webkit-transition: transform 0.33s
+			transition: transform 0.33s
 			transform: scale(1.33, 1.33)
 
 // Animations
