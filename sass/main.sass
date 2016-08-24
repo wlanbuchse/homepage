@@ -22,7 +22,7 @@ $content-width: calc(37.5rem + 120px)
 body
 	background-color: $white
 	color: $black
-	font-size: 1.25em
+	font-size: 1.5em
 
 div
 	box-sizing: border-box
@@ -51,7 +51,7 @@ header
 footer
 	border-top: 1px solid $black
 	padding-top: 12px
-	margin-top: 28px
+	margin: 28px 0px
 	text-align: center
 
 	p
@@ -98,11 +98,16 @@ footer
 #contact-icons
 	margin-bottom: 12px
 
-	i
-		margin-right: 3px
+	a i
+		-webkit-transition: transform 0.33s
+		color: $black
 
 		&:last-of-type
 			margin-right: 0px
+
+		&:hover
+			-webkit-transition: transform 0.33s
+			transform: scale(1.33, 1.33)
 
 // Animations
 @keyframes blink
