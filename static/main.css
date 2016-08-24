@@ -130,6 +130,11 @@ footer {
 .red-text {
   color: #ec0b0b; }
 
+.heartbeat:hover {
+  animation-duration: 500ms;
+  animation-name: heartbeat;
+  animation-iteration-count: 2; }
+
 #language-controls {
   position: absolute;
   top: 0px;
@@ -155,5 +160,10 @@ footer {
     opacity: 1; }
   to {
     opacity: 0; } }
+@keyframes heartbeat {
+  from {
+    transform: scale(1, 1); }
+  to {
+    transform: scale(1.2, 1.2); } }
 
 /*# sourceMappingURL=main.css.map */
