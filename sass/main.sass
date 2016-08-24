@@ -127,6 +127,8 @@ footer
 	cursor: pointer
 
 	.bar
+		-webkit-transition: all 0.33s
+		transition: all 0.33s
 		display: block
 		position: absolute
 		width: 100%
@@ -139,6 +141,21 @@ footer
 			top: 10px
 		&:nth-child(3)
 			bottom: 0px
+
+	&.expanded .bar
+		-webkit-transition: all 0.33s
+		transition: all 0.33s
+
+		&:nth-child(1)
+			transform: rotate(45deg)
+			top: calc(50% - 1px)
+
+		&:nth-child(2)
+			opacity: 0
+
+		&:nth-child(3)
+			transform: rotate(-45deg)
+			bottom: calc(50% - 1px)
 
 .cursor
 	display: none

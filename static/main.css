@@ -106,6 +106,8 @@ footer {
   height: 22px;
   cursor: pointer; }
   #nav-toggle .bar {
+    -webkit-transition: all 0.33s;
+    transition: all 0.33s;
     display: block;
     position: absolute;
     width: 100%;
@@ -117,6 +119,17 @@ footer {
       top: 10px; }
     #nav-toggle .bar:nth-child(3) {
       bottom: 0px; }
+  #nav-toggle.expanded .bar {
+    -webkit-transition: all 0.33s;
+    transition: all 0.33s; }
+    #nav-toggle.expanded .bar:nth-child(1) {
+      transform: rotate(45deg);
+      top: calc(50% - 1px); }
+    #nav-toggle.expanded .bar:nth-child(2) {
+      opacity: 0; }
+    #nav-toggle.expanded .bar:nth-child(3) {
+      transform: rotate(-45deg);
+      bottom: calc(50% - 1px); }
 
 .cursor {
   display: none; }
