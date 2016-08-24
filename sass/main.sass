@@ -48,6 +48,13 @@ header
 	border-bottom: 1px solid $black
 	padding-bottom: 6px
 
+	h1
+		margin-bottom: 0px
+
+	h3
+		margin-top: 6px
+		margin-bottom: 6px
+
 footer
 	border-top: 1px solid $black
 	padding-top: 12px
@@ -78,23 +85,25 @@ footer
 	p
 		text-align: justify
 
+		&:last-of-type
+			margin-top: 16px
+
 .project
-	border-bottom: 1px solid $white
+	border-bottom: 1px dashed $black
 	padding-bottom: 12px
+	margin-top: 12px
 	margin-bottom: 6px
 
-	&:last-of-type
-		border-bottom: none
-		padding-bottom: 0px
-		margin-bottom: 0px
+.button-container
+	text-align: center
 
 .button
 	-webkit-transition: color 0.5s, background-color 0.5s
 	transition: color 0.5s, background-color 0.5s
-	display: block
+	display: inline-block
 	border: 1px solid $black
 	width: 100px
-	margin: 24px auto 0px auto
+	margin: 12px auto
 	padding: 6px 12px
 	text-align: center !important
 	color: $black
@@ -123,7 +132,7 @@ footer
 #language-controls
 	position: absolute
 	top: 0px
-	right: 0px
+	left: 0px
 	padding: 8px 16px
 	font-size: 0.75em
 
