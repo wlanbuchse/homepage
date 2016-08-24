@@ -46,7 +46,7 @@ footer {
     font-size: 0.85em; }
 
 .container {
-  max-width: calc(37.5rem + 120px); }
+  max-width: calc(40rem + 120px); }
 
 .light-text {
   font-weight: 300; }
@@ -70,6 +70,25 @@ footer {
     border-bottom: none;
     padding-bottom: 0px;
     margin-bottom: 0px; }
+
+.button {
+  -webkit-transition: color 0.5s, background-color 0.5s;
+  transition: color 0.5s, background-color 0.5s;
+  display: block;
+  border: 1px solid #202020;
+  width: 100px;
+  margin: 24px auto 0px auto;
+  padding: 6px 12px;
+  text-align: center !important;
+  color: #202020;
+  font-weight: 300;
+  font-size: 1.15em; }
+  .button:hover {
+    -webkit-transition: color 0.5s, background-color 0.5s;
+    transition: color 0.5s, background-color 0.5s;
+    color: #f2f2f2;
+    text-decoration: none;
+    background-color: #202020; }
 
 .cursor {
   display: none; }

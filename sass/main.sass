@@ -8,7 +8,7 @@ $black: #202020
 $grey: #f0f0f0
 $red: #ec0b0b
 
-$content-width: calc(37.5rem + 120px)
+$content-width: calc(40rem + 120px)
 
 *
 	margin: 0
@@ -87,6 +87,26 @@ footer
 		border-bottom: none
 		padding-bottom: 0px
 		margin-bottom: 0px
+
+.button
+	-webkit-transition: color 0.5s, background-color 0.5s
+	transition: color 0.5s, background-color 0.5s
+	display: block
+	border: 1px solid $black
+	width: 100px
+	margin: 24px auto 0px auto
+	padding: 6px 12px
+	text-align: center !important
+	color: $black
+	font-weight: 300
+	font-size: 1.15em
+
+	&:hover
+		-webkit-transition: color 0.5s, background-color 0.5s
+		transition: color 0.5s, background-color 0.5s
+		color: $white
+		text-decoration: none
+		background-color: $black
 
 .cursor
 	display: none
