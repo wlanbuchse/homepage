@@ -75,6 +75,10 @@ footer
 	padding: 5px 24px 14px 24px
 	margin-top: 28px
 	border: 1px solid $black
+	animation-duration: 500ms
+	animation-name: appear
+	animation-iteration-count: 1
+	animation-timing-function: linear
 
 	&:hover h2 .cursor
 		display: inline
@@ -172,6 +176,7 @@ footer
 	z-index: 99
 	border-left: 1px solid $black
 	padding-bottom: 10px
+	background-color: $white
 
 	h3, a
 		padding-left: 20px
@@ -180,6 +185,8 @@ footer
 		margin-bottom: 20px
 
 	a
+		-webkit-transition: color 0.5s, background-color 0.5s
+		transition: color 0.5s, background-color 0.5s
 		display: block
 		color: $black
 		padding-top: 10px
@@ -188,6 +195,8 @@ footer
 		font-weight: 300
 
 		&:hover
+			-webkit-transition: color 0.5s, background-color 0.5s
+			transition: color 0.5s, background-color 0.5s
 			color: $white
 			text-decoration: none
 			background-color: $black
@@ -214,6 +223,9 @@ footer
 	animation-name: heartbeat
 	animation-iteration-count: 2
 
+.heading-font
+	font-family: $heading-font !important
+
 #language-controls
 	position: absolute
 	top: 0px
@@ -237,12 +249,32 @@ footer
 			transition: transform 0.33s
 			transform: scale(1.33, 1.33)
 
+// Media queries
+@media only screen and (max-width: 660px)
+	header
+		padding-top: 12px
+
+@media only screen and (max-width: 420px)
+	.card p
+		text-align: left
+
+@media only screen and (max-width: 360px)
+	header h1
+		display: block
+		max-width: 200px
+
 // Animations
 @keyframes blink
 	from
 		opacity: 1
 	to
 		opacity: 0
+
+@keyframes appear
+	from
+		opacity: 0
+	to
+		opacity: 1
 
 @keyframes heartbeat
 	from

@@ -59,7 +59,11 @@ footer {
 .card {
   padding: 5px 24px 14px 24px;
   margin-top: 28px;
-  border: 1px solid #202020; }
+  border: 1px solid #202020;
+  animation-duration: 500ms;
+  animation-name: appear;
+  animation-iteration-count: 1;
+  animation-timing-function: linear; }
   .card:hover h2 .cursor {
     display: inline; }
   .card h2 {
@@ -144,12 +148,15 @@ footer {
   right: -220px;
   z-index: 99;
   border-left: 1px solid #202020;
-  padding-bottom: 10px; }
+  padding-bottom: 10px;
+  background-color: #f2f2f2; }
   #navbar h3, #navbar a {
     padding-left: 20px; }
   #navbar h3 {
     margin-bottom: 20px; }
   #navbar a {
+    -webkit-transition: color 0.5s, background-color 0.5s;
+    transition: color 0.5s, background-color 0.5s;
     display: block;
     color: #202020;
     padding-top: 10px;
@@ -157,6 +164,8 @@ footer {
     font-size: 1.1em;
     font-weight: 300; }
     #navbar a:hover {
+      -webkit-transition: color 0.5s, background-color 0.5s;
+      transition: color 0.5s, background-color 0.5s;
       color: #f2f2f2;
       text-decoration: none;
       background-color: #202020; }
@@ -182,6 +191,9 @@ footer {
   animation-name: heartbeat;
   animation-iteration-count: 2; }
 
+.heading-font {
+  font-family: "Raleway", "Helvetica", "Arial", "sans-serif" !important; }
+
 #language-controls {
   position: absolute;
   top: 0px;
@@ -202,11 +214,26 @@ footer {
       transition: transform 0.33s;
       transform: scale(1.33, 1.33); }
 
+@media only screen and (max-width: 660px) {
+  header {
+    padding-top: 12px; } }
+@media only screen and (max-width: 420px) {
+  .card p {
+    text-align: left; } }
+@media only screen and (max-width: 360px) {
+  header h1 {
+    display: block;
+    max-width: 200px; } }
 @keyframes blink {
   from {
     opacity: 1; }
   to {
     opacity: 0; } }
+@keyframes appear {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
 @keyframes heartbeat {
   from {
     transform: scale(1, 1); }
