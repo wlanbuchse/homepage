@@ -1,0 +1,290 @@
+// Variables
+$heading-font: "Raleway", "Helvetica", "Arial", "sans-serif"
+$body-font: "Open Sans", "Helvetica", "Arial", "sans-serif"
+$monospace-font: "Inconsolata", "Helvetica", "Arial", "sans-serif"
+
+$white: #f2f2f2
+$black: #202020
+$grey: #f0f0f0
+$red: #ff2321
+
+$content-width: calc(40rem + 120px)
+
+*
+	margin: 0
+	padding: 0
+	border: 0
+	outline: 0
+	font-size: 100%
+	vertical-align: baseline
+	background: transparent
+
+body
+	background-color: $white
+	color: $black
+	font-size: 1.5em
+
+div
+	box-sizing: border-box
+
+h1, h2, h3
+	font-family: $heading-font
+
+h1
+	font-size: 1.918em
+
+h2
+	font-size: 1.618em
+
+h3
+	font-size: 1.25em
+
+p
+	font-size: 1em
+	font-family: $body-font
+	line-height: 1.5
+
+header
+	border-bottom: 1px solid $black
+	padding-bottom: 6px
+
+	h1
+		margin-bottom: 0px
+
+	h3
+		margin-top: 6px
+		margin-bottom: 6px
+
+	a
+		color: inherit
+
+		&:hover
+			color: inherit
+			text-decoration: none
+
+footer
+	border-top: 1px solid $black
+	padding-top: 12px
+	margin: 28px 0px
+	text-align: center
+
+	p
+		line-height: 0.7
+		font-size: 0.85em
+
+.container
+	max-width: $content-width
+
+.light-text
+	font-weight: 300
+
+.card
+	padding: 5px 24px 14px 24px
+	margin-top: 28px
+	border: 1px solid $black
+	animation-duration: 500ms
+	animation-name: appear
+	animation-iteration-count: 1
+	animation-timing-function: linear
+
+	&:hover h2 .cursor
+		display: inline
+
+	h2
+		font-family: $monospace-font
+
+	p
+		text-align: justify
+
+		&:last-of-type
+			margin-top: 16px
+
+.project
+	border-bottom: 1px dashed $black
+	padding-bottom: 12px
+	margin-top: 12px
+	margin-bottom: 6px
+
+.button-container
+	text-align: center
+
+.button
+	-webkit-transition: color 0.5s, background-color 0.5s
+	transition: color 0.5s, background-color 0.5s
+	display: inline-block
+	border: 1px solid $black
+	min-width: 100px
+	margin: 12px auto
+	padding: 6px 12px
+	text-align: center !important
+	color: $black
+	font-weight: 300
+	font-size: 1.15em
+
+	&:hover
+		-webkit-transition: color 0.5s, background-color 0.5s
+		transition: color 0.5s, background-color 0.5s
+		color: $white
+		text-decoration: none
+		background-color: $black
+
+#nav-toggle
+	display: block
+	position: absolute
+	top: 21.5px
+	right: 20px
+	width: 35px
+	height: 22px
+	cursor: pointer
+	z-index: 100
+
+	.bar
+		-webkit-transition: all 0.33s
+		transition: all 0.33s
+		display: block
+		position: absolute
+		width: 100%
+		height: 2px
+		background-color: $black
+
+		&:nth-child(1)
+			top: 0px
+		&:nth-child(2)
+			top: 10px
+		&:nth-child(3)
+			bottom: 0px
+
+	&.expanded
+		position: fixed
+
+		.bar
+			-webkit-transition: all 0.33s
+			transition: all 0.33s
+
+			&:nth-child(1)
+				transform: rotate(45deg)
+				top: calc(50% - 1px)
+
+			&:nth-child(2)
+				opacity: 0
+
+			&:nth-child(3)
+				transform: rotate(-45deg)
+				bottom: calc(50% - 1px)
+
+#navbar
+	-webkit-transition: right 0.35s
+	transition: right 0.35s
+	width: 220px
+	min-height: 100%
+	position: fixed
+	top: 0px
+	right: -220px
+	z-index: 99
+	border-left: 1px solid $black
+	padding-bottom: 10px
+	background-color: $white
+
+	h3, a
+		padding-left: 20px
+
+	h3
+		margin-bottom: 20px
+
+	a
+		-webkit-transition: color 0.5s, background-color 0.5s
+		transition: color 0.5s, background-color 0.5s
+		display: block
+		color: $black
+		padding-top: 10px
+		padding-bottom: 10px
+		font-size: 1.1em
+		font-weight: 300
+
+		&:hover
+			-webkit-transition: color 0.5s, background-color 0.5s
+			transition: color 0.5s, background-color 0.5s
+			color: $white
+			text-decoration: none
+			background-color: $black
+
+	&.expanded
+		-webkit-transition: right 0.35s
+		transition: right 0.35s
+		right: 0px
+
+.cursor
+	display: none
+
+.blink-text
+	animation-duration: 600ms
+	animation-name: blink
+	animation-iteration-count: infinite
+	animation-direction: alternate
+
+.red-text
+	color: $red
+
+.heartbeat:hover
+	animation-duration: 500ms
+	animation-name: heartbeat
+	animation-iteration-count: 2
+
+.heading-font
+	font-family: $heading-font !important
+
+#language-controls
+	position: absolute
+	top: 0px
+	left: 0px
+	padding: 8px 16px
+	font-size: 0.85em
+
+#contact-icons
+	margin-bottom: 12px
+
+	a i
+		-webkit-transition: transform 0.33s
+		transition: transform 0.33s
+		color: $black
+
+		&:last-of-type
+			margin-right: 0px
+
+		&:hover
+			-webkit-transition: transform 0.33s
+			transition: transform 0.33s
+			transform: scale(1.33, 1.33)
+
+// Media queries
+@media only screen and (max-width: 660px)
+	header
+		padding-top: 12px
+
+@media only screen and (max-width: 420px)
+	.card p
+		text-align: left
+
+@media only screen and (max-width: 360px)
+	header h1
+		display: block
+		max-width: 200px
+
+// Animations
+@keyframes blink
+	from
+		opacity: 1
+	to
+		opacity: 0
+
+@keyframes appear
+	from
+		opacity: 0
+	to
+		opacity: 1
+
+@keyframes heartbeat
+	from
+		transform: scale(1, 1)
+	to
+		transform: scale(1.2, 1.2)
