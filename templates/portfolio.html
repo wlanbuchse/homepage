@@ -1,21 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Archiv - Johannes Pawelczyk</title>
+	<title>Portfolio - Johannes Pawelczyk</title>
 	<meta charset="utf-8">
 	<meta name="description" content="">
 	<link href="https://fonts.googleapis.com/css?family=Inconsolata|Open+Sans:400,400i,600|Raleway:300,400" rel="stylesheet">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-	<link rel="stylesheet" href="static/main.css">
+	<link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
 	<script   src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
-	<script type="text/javascript" src="js/nav.js"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename='js/nav.js') }}"></script>
 </head>
 <body>
 	<div class="container">
-		<p id="language-controls">
-			<a href="">DE</a> | <a href="">EN</a>
-		</p>
 		<div id="nav-toggle">
 			<div class="bar"></div>
 			<div class="bar"></div>
@@ -23,34 +20,31 @@
 		</div>
 		<div id="navbar">
 			<h3>Navigation</h3>
-			<a href="index.html">Startseite</a>
-			<a href="portfolio.html">Portfolio</a>
-			<a href="archiv.html">Archiv</a>
-			<a href="blog.html">Blog</a>
+			<a href="/">Startseite</a>
+			<a href="/portfolio">Portfolio</a>
+			<a href="/archiv">Archiv</a>
+			<a href="mailto:pawelczyk.johannes@gmail.com">Kontakt</a>
 		</div>
 		<header>
-			<h1><span class="light-text">Johannes</span> Pawelczyk</h1>
+			<a href="/"><h1><span class="light-text">Johannes</span> Pawelczyk</h1></a>
 			<h3>Portfolio</h3>
 		</header>
 		<div class="card">
 			<h2>$ cat ˜/soul-cycling-website<i class="cursor blink-text">_</i></h2>
-			<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
-			<a href="">Zur ausführlichen Analyse</a>
+			<p>Mein erstes großes Projekt: Die Entwicklung einer neuen Internetpräsenz für das Fahrradfachgeschäft SoulCycling GbR.</p>
+			<p>Ausgehend von der alten Homepage und den Problemen damit, habe ich von Grund auf eine neue Website konzipiert, designt, umgesetzt und veröffentlicht; stets in enger Zusammenarbeit mit den Besitzern der SoulCycling GbR. Es war mir wichtig sie als Kunden während des gesamten Projekts auf dem Laufenden zu halten und natürlich Ihre Wünsche, Vorschläge und Kritik zu berücksichtigen.</p>
+			<div class="button-container">
+				<a class="button" href="https://soul-cycling.de" target="_blank" rel="noopener noreferrer">Zur Website</a>
+				<a class="button" href="#">Zur Fallstudie</a>
+			</div>
 		</div>
 		<div class="card">
 			<h2>$ cat ˜/homepage<i class="cursor blink-text">_</i></h2>
-			<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
-			<a href="">Zur ausführlichen Analyse</a>
-		</div>
-		<div class="card">
-			<h2>$ cat ˜/screenshotter<i class="cursor blink-text">_</i></h2>
-			<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
-			<a href="https://github.com/wlanbuchse/screenshotter" target="_blank" rel="noopener noreferrer">Zum GitHub-Repo</a>
-		</div>
-		<div class="card">
-			<h2>$ cat ˜/contests<i class="cursor blink-text">_</i></h2>
-			<p>Ich löse ab und an Übungsaufgaben verschiedener Programmierwettbewerbe (z.B. ICPC oder USACO). Ich lade Aufgabenstellungen und meine jeweiligen Lösungen auf GitHub hoch.</p>
-			<a href="https://github.com/wlanbuchse/contests" target="_blank" rel="noopener noreferrer">Zum GitHub-Repo</a>
+			<p>Natürlich zählt auch diese Homepage zu meinem Portfolio.</p>
+			<p>Sie wurde mit dem Ziel größter Simplizität und dadurch entstehender Eleganz konzipiert und designt. Wie der deutsche Industriedesigner <a href="https://de.wikipedia.org/wiki/Dieter_Rams">Dieter Rams</a> sagte: "Gutes Design ist so wenig Design wie möglich."</p>
+			<div class="button-container">
+				<a class="button" href="#">Zur Fallstudie</a>
+			</div>
 		</div>
 		<footer>
 			<div id="contact-icons">
@@ -61,7 +55,7 @@
 				<a href="http://stackoverflow.com/users/5490557/j-pawelczyk" target="_blank" rel="noopener noreferrer"><i class="fa fa-stack-overflow fa-lg" aria-hidden="true"></i></a>
 			</div>
 			<p>&copy; 2016 Johannes Pawelczyk</p>
-			<p><a href="impressum.html">Impressum</a></p>
+			<p><a href="/impressum">Impressum</a></p>
 		</footer>
 	</div>
 </body>
