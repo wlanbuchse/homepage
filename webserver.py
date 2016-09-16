@@ -4,9 +4,12 @@
 # (c) 2016 by Johannes Pawelczyk. All rights reserved.
 
 from flask import Flask, render_template, url_for, request, redirect
+from werkzeug.contrib.fixers import ProxyFix
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = '9J3a7aNfymT3aXoUZAXJ7QTYDqc2f379'
+
+app.wsgi_app = ProxyFix(app.wsgi_app)
 
 # Routing
 
