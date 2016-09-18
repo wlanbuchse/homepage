@@ -81,6 +81,7 @@ footer {
   margin-bottom: 6px; }
 
 .button-container {
+  margin-top: 12px;
   text-align: center; }
 
 .button {
@@ -220,7 +221,10 @@ footer {
     padding-top: 12px; } }
 @media only screen and (max-width: 420px) {
   .card p {
-    text-align: left; } }
+    text-align: left; }
+
+  .button {
+    display: block; } }
 @media only screen and (max-width: 360px) {
   header h1 {
     display: block;
