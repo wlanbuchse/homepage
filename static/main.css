@@ -209,8 +209,6 @@ footer {
     -webkit-transition: transform 0.33s;
     transition: transform 0.33s;
     color: #202020; }
-    #contact-icons a i:last-of-type {
-      margin-right: 0px; }
     #contact-icons a i:hover {
       -webkit-transition: transform 0.33s;
       transition: transform 0.33s;
